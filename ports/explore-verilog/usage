@@ -1,0 +1,4 @@
+The package explore-verilog provides CMake targets:
+
+    find_package(explore-verilog CONFIG REQUIRED)
+    verilate(SOURCES nyu::compressors)
