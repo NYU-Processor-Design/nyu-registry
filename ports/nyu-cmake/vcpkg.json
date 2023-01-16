@@ -1,6 +1,6 @@
 {
   "name": "nyu-cmake",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NYU Processor Design's CMake function repo",
   "homepage": "https://github.com/NYU-Processor-Design/nyu-cmake",
   "maintainers": [
