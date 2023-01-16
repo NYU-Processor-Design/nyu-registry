@@ -1,0 +1,20 @@
+{
+  "name": "nyu-cmake",
+  "version": "1.0.0",
+  "description": "NYU Processor Design's CMake function repo",
+  "homepage": "https://github.com/NYU-Processor-Design/nyu-cmake",
+  "maintainers": [
+    "Vito Gamberini <vito@gamberini.email>"
+  ],
+  "license": "CC0-1.0",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

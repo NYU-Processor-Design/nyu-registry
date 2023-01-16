@@ -1,0 +1,6 @@
+nyu-cmake does not provide any targets, only functions
+
+    find_package(nyu-cmake CONFIG REQUIRED)
+
+    nyu_add_sv(target verilog.sv)
+    nyu_verilate(target)
