@@ -1,6 +1,6 @@
 {
   "name": "explore-verilog",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "NYU Processor Design's Verilog Exploration Repo",
   "homepage": "https://github.com/NYU-Processor-Design/explore-verilog",
   "maintainers": [
@@ -15,6 +15,9 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
+    },
+    {
+      "name": "nyu-cmake"
     }
   ]
 }
