@@ -9,7 +9,7 @@ vcpkg_from_github(
 vcpkg_cmake_configure(
   SOURCE_PATH ${SOURCE_PATH}
   OPTIONS
-    -DBUILD_TESTS=FALSE
+    -DNYU_BUILD_TESTS=FALSE
 )
 vcpkg_cmake_install()
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug)
