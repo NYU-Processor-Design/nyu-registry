@@ -1,0 +1,4 @@
+The package nyu-amba provides CMake targets:
+
+    find_package(nyu-amba CONFIG REQUIRED)
+    nyu_link_sv(target nyu::amba)

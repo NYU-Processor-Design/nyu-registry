@@ -1,0 +1,22 @@
+vcpkg_from_github(
+  OUT_SOURCE_PATH SOURCE_PATH
+  REPO NYU-Processor-Design/nyu-amba
+  REF 51c23dd5109181753e39ee4b90b6b1fa6c83f9c4
+  SHA512 82ddd773800747fd29f30f642f5c083b62d0569162fef321bb7e649793555bc3d9be513d697875a9e0ea0588206741789ee05c44c425face06aac0b4cde1b5d5
+  HEAD_REF main
+)
+
+vcpkg_cmake_configure(
+  SOURCE_PATH ${SOURCE_PATH}
+  OPTIONS
+    -DBUILD_TESTS=FALSE
+)
+vcpkg_cmake_install()
+file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug)
+vcpkg_install_copyright(FILE_LIST ${SOURCE_PATH}/License)
+file(
+  INSTALL ${CMAKE_CURRENT_LIST_DIR}/usage
+  DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT}
+)
+
+set(VCPKG_POLICY_EMPTY_INCLUDE_FOLDER enabled)
