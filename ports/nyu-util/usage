@@ -1,4 +1,4 @@
 The package nyu-util provides CMake targets:
 
     find_package(nyu-util CONFIG REQUIRED)
-    target_link_libraries(target PRIVATE nyu::covrecorder)
+    target_link_libraries(target PRIVATE nyu::covrecorder nyu::testutil)
