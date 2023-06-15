@@ -1,0 +1,4 @@
+The package nyu-sync provides CMake targets:
+
+    find_package(nyu-sync CONFIG REQUIRED)
+    nyu_link_sv(target nyu::sync)
