@@ -1,0 +1,22 @@
+vcpkg_from_github(
+  OUT_SOURCE_PATH SOURCE_PATH
+  REPO NYU-Processor-Design/PurdNyUart
+  REF 052a4941d78dc16deb7dce605c96c0a1b015472d
+  SHA512 4dcd083d71eb5c00344a23b300024b9f5f1812a9d7dcac0bb4147e6acbc716115dfaffbd168c0602225d4827e92c8bdb97b6af8395a2d87ab1cb9f6c75ca7d5c
+  HEAD_REF main
+)
+
+vcpkg_cmake_configure(
+  SOURCE_PATH ${SOURCE_PATH}
+  OPTIONS
+    -DNYU_BUILD_TESTS=FALSE
+)
+vcpkg_cmake_install()
+file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug)
+vcpkg_install_copyright(FILE_LIST ${SOURCE_PATH}/License)
+file(
+  INSTALL ${CMAKE_CURRENT_LIST_DIR}/usage
+  DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT}
+)
+
+set(VCPKG_POLICY_EMPTY_INCLUDE_FOLDER enabled)

@@ -1,0 +1,4 @@
+The package purdnyuart provides CMake targets:
+
+    find_package(purdnyuart CONFIG REQUIRED)
+    nyu_link_sv(target nyu::uart)
