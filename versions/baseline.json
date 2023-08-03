@@ -9,7 +9,7 @@
       "port-version": 0
     },
     "nyu-cmake": {
-      "baseline": "1.1.2",
+      "baseline": "1.1.3",
       "port-version": 0
     },
     "nyu-util": {
