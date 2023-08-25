@@ -1,8 +1,8 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO NYU-Processor-Design/PurdNyUart
-  REF 49420f9fad46a65bcf948fdf4f622e3c449a920b
-  SHA512 c5027aaa60e023af1f7dea97e3b9fb379925058f69d4f09676b3411cd6d638f1e36f82596d77bee4dbece3637a15ccd8055d3e6bf679a3f83315e9521459a714
+  REF 7113c5e42c96378f7216d2c7cafb23b01aedf39d
+  SHA512 5e53ddc0383e491b50688f497f20a8e9c507ffae0ecec33c08ac24805929cda5f203221377b2c4e7ac41df340d370dd05e8bccbfbac9533ceacb4c103e3d0753
   HEAD_REF main
 )
 
@@ -12,6 +12,8 @@ vcpkg_cmake_configure(
     -DNYU_BUILD_TESTS=FALSE
 )
 vcpkg_cmake_install()
+vcpkg_cmake_config_fixup()
+
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug)
 vcpkg_install_copyright(FILE_LIST ${SOURCE_PATH}/License)
 file(
