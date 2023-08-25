@@ -21,7 +21,7 @@
       "port-version": 0
     },
     "purdnyuart": {
-      "baseline": "2.0.0",
+      "baseline": "2.0.1",
       "port-version": 0
     }
   }
