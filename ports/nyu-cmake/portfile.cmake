@@ -1,17 +1,19 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO NYU-Processor-Design/nyu-cmake
-  REF 67e2210b22ab08fecfe2c724c645b9d3d2b69520
-  SHA512 a53b9f4dbab55fa85f0e90ee11dc1dca7c20523a3425ec4e29734ce7db8b7e5f63c1daa5e9a919cfc8647465220b3ba7b300251114eb49613e5792cbb7af6d15
+  REF 7ddbf0c2ae6be450c191d640d77a458f68676666
+  SHA512 7a24f53880ef99b6c4739b90d1106a2ca7241393054a9ab994efd9aa3d225b378a785100852ff953853058ec7ad17af92fa9f96a2d8a9623a913d7d016b4e1ea
   HEAD_REF main
 )
 
-vcpkg_cmake_configure(
-  SOURCE_PATH ${SOURCE_PATH}
-)
+vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH})
 vcpkg_cmake_install()
+vcpkg_cmake_config_fixup()
+
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
+
 vcpkg_install_copyright(FILE_LIST ${SOURCE_PATH}/License)
+
 file(
   INSTALL ${CMAKE_CURRENT_LIST_DIR}/usage
   DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT}
