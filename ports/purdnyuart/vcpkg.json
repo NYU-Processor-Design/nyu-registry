@@ -3,9 +3,11 @@
   "version": "2.0.2",
   "description": "Purdue + NYU UART",
   "homepage": "https://github.com/NYU-Processor-Design/PurdNyUart",
-  "maintainers": [],
   "license": "CC0-1.0",
   "dependencies": [
+    "catch2",
+    "nyu-cmake",
+    "nyu-util",
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -13,9 +15,6 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
-    },
-    "nyu-cmake",
-    "nyu-util",
-    "catch2"
+    }
   ]
 }

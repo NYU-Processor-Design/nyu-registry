@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "NYU Sync",
   "homepage": "https://github.com/nickelpro/nyu-sync",
-  "maintainers": [],
   "license": "CC0-1.0",
   "dependencies": [
+    "nyu-cmake",
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -13,9 +13,6 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
-    },
-    {
-      "name": "nyu-cmake"
     }
   ]
 }

@@ -1,15 +1,16 @@
 {
   "name": "nyu-amba",
   "version": "0.1.0",
-  "description": "NYU Processor Design's AMBA Implementation",
-  "homepage": "https://github.com/NYU-Processor-Design/nyu-amba",
   "maintainers": [
     "Vito Gamberini <vito@gamberini.email>",
     "Rishyak Panchal <hello@rishyak.com>",
     "Kevin Yap <kcy4870@nyu.edu>"
   ],
+  "description": "NYU Processor Design's AMBA Implementation",
+  "homepage": "https://github.com/NYU-Processor-Design/nyu-amba",
   "license": "CC0-1.0",
   "dependencies": [
+    "nyu-cmake",
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -17,9 +18,6 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
-    },
-    {
-      "name": "nyu-cmake"
     }
   ]
 }
