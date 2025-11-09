@@ -1,6 +1,6 @@
 {
   "name": "nyu-util",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "maintainers": "Vito Gamberini <vito@gamberini.email>",
   "description": "NYU Processor Design's Utilities",
   "homepage": "https://github.com/NYU-Processor-Design/nyu-util",
